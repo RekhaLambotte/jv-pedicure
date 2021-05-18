@@ -37,34 +37,57 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
 
         <h1> Contact Page </h1>
 
-        <form>
-          <fieldset disabled>
-            <legend>Disabled fieldset example</legend>
-            <div class="mb-3">
-              <label for="disabledTextInput" class="form-label">Disabled input</label>
-              <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-            </div>
-            <div class="mb-3">
-              <label for="disabledSelect" class="form-label">Disabled select menu</label>
-              <select id="disabledSelect" class="form-select">
-                <option>Disabled select</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                <label class="form-check-label" for="disabledFieldsetCheck">
-                  Can't check this
-                </label>
+        <div class="d-flex justify-content-center align-items-center ">
+          <form class=" formContact p-5 m-5 ">
+            <fieldset disabled>
+              <legend class="mb-5">
+                Prendre contact
+              </legend>
+              <div class="mb-5">
+                <!-- <label for="disabledTextInput" class="form-label">Disabled input</label> -->
+                <input type="text" id="disabledTextInput" class="form-control bg-white border border-top-0 border-end-0 border-start-0 border-4" placeholder="Nom Prénom">
               </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </fieldset>
-        </form>
+
+              <div class="mb-5">
+                <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+                <input type="email" class="form-control bg-white border border-top-0 border-end-0 border-start-0 border-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email*">
+                <div id="emailHelp" class="form-text ">* We'll never share your email with anyone else.</div>
+              </div>
+
+              <div class="mb-5">
+                <label for="disabledSelect" class="form-label">Je souhaite prendre rendez-vous pour ...</label>
+                <select id="disabledSelect" class="form-select">
+                  <option> Faire votre sélection</option>
+                  <option> Demander des informations</option>
+                  <option> Un soin de pédicure</option>
+                  <option> Autre</option>
+                </select>
+              </div>
+              
+              <div class="mb-5">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                  <label class="form-check-label " for="disabledFieldsetCheck">
+                    Can't check this
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-5">
+                <!-- <label for="disabledTextInput" class="form-label">Disabled input</label> -->
+                <textarea id="disabledTextInput" class="form-control bg-white border border-top-0 border-end-0 border-start-0 border-4" placeholder="Disabled input"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+
+            </fieldset>
+          </form>
+        </div>
+        
 
     </main>
 
